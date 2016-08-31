@@ -1,0 +1,341 @@
+/*-- CSS Reset --*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-- CSS Start --*/
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+.text-hidden{
+	text-indent:100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*-- header --*/
+
+header{
+	background-color: #f3f3f3;
+	position: relative;
+	height: 30px;
+}
+
+header .social-icon{
+	position:absolute;
+	right:30px;
+}
+
+header .social-icon li{
+	float: left;
+}
+header .social-icon li + li:before{
+	content: "|";
+	color: #CCC;
+	margin-left:5px;
+}
+
+header .social-icon li a{
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;;
+}
+
+.social-icon-fb{
+	font-color:;;
+	color: #3B5998;
+}
+
+.social-icon-twitter{
+	color: #55ACEE;
+
+}
+
+header .social-icon li img{
+	width:15px;
+	margin:5px 5px 0px 5px;
+}
+/*--	wrapper  --;*/
+.wrapper{
+	width: 1024px;
+	margin: auto;
+}
+
+/*--  nav  --*/
+nav{
+	margin-top:10px;
+}
+
+nav .logo{
+	background-image:url('../img/logo.png');
+	width:178px;
+	height: 45px;
+	float: left;
+}
+nav .container{
+	margin: 0 10px ;
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display:inline-block;
+	width: 80px;
+	text-align: center;
+	padding: 0 15px;
+}
+nav ul li a{
+	font-size: 1.1em;
+	color: #22d3a7;
+	line-height: 45px;
+	text-decoration: none;
+}
+nav .selected{
+	border-bottom: 4px solid #00cc99;
+}
+
+/*	--	banner 	--	*/
+
+.banner{
+	width: 1024px;
+	height: 380px;
+	background: url("../img/banner.jpg") no-repeat center bottom;
+	margin:auto;
+	position: relative;
+}
+.banner .caption{
+	font-family: "微軟正黑體";
+	color: #fff;
+	font-size: 2.5em;
+	background-color: rgba(15,15,15,.3);
+	top: 112px;
+	padding: 1em;
+	position: absolute;
+	width: 944px;
+}
+
+/*--  main  --*/
+main{
+	margin-top: 2em;
+}
+main .intro{
+	width: 320px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	font-family: "微軟正黑體";
+	/*border: 1px solid #f1f1f1;*/
+	box-shadow: 0px 3px 5px 0px rgba(195,195,195,1);
+	margin: 1em;
+	height: 360px;
+	border-radius: 5px;
+}
+main .intro:nth-child(1){
+	margin-left:0;
+}
+main .intro:nth-child(3){
+	margin-right:0;
+}
+main .intro .image-container{
+	width:320px;
+	height:175px;
+}
+
+main .intro .html5-img{
+	padding-top:30px;
+}
+main .intro .responsive-img{
+	padding-top:50px;
+}
+main .intro .jquery-img{
+	padding-top:50px;
+}
+main .intro h3{
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.5em 0 0;
+}
+main .intro p{
+	text-align: left;
+	line-height: 1.4em;
+	padding: 1em 1em;;
+}
+main .jquery p{
+	padding-bottom: 0.4em;;
+}
+main .jquery ul{
+	line-height: 1.4em;
+	margin-left: 3em;
+}
+main .jquery ul li{
+	list-style-type: disc;
+	text-align: left;
+}
+
+/*  --section  --*/
+
+section{
+	margin-top:2.5em;
+	text-align:center;
+}
+
+section h3{
+	font-size:1.4em;
+	font-weight: bold;
+	text-align: center;
+}
+
+section table{
+	margin-top: 1em;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	margin: 1.5em auto 1em auto;
+}
+section table tr{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height:35px;
+	line-height: 35px;
+}
+section table tr:first-child{
+	background-color: #F7F7F7;
+	font-weight: bold;
+}
+section table tr td{
+	width: 220px;
+}
+section table tr td:first-child,section table tr th:first-child{
+	padding-left:2em;
+}
+section .highlight{
+	color: #00a67d;
+}
+
+/*	--contact--  */
+.contact{
+	height:400px ;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #00644b, #009772);
+}
+.contact h3{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5em;
+	color: #FFF;
+	padding:1.5em 0 1em;
+}
+.contact form textarea{
+	width: 46%;
+	margin:0 2em 0 1em;
+	float: left;
+	height: 250px;
+	border-radius: 5px;
+}
+.contact form label{
+	color: #FFF;
+	width: 45%;
+	display:inline-block;
+	font-family:'微軟正黑體';
+	margin-bottom:5px;
+}
+.contact form input[type="email"],
+.contact form input[type="text"]{
+	width: 45%;
+	margin-bottom: 17px;
+	padding: 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.contact form input[type="email"]:focus, 
+.contact form input[type="text"]:focus,
+.contact form textarea:focus{
+    outline: 0;
+    border-color: #129FEA;
+}
+.contact form input[type="submit"]{
+	background-color: #0c9;
+	width: 6%;
+	padding: 0.6em;
+	border:none;
+	border-radius: 3px;
+	color: #FFF;
+	float: right;
+	margin: 5px 46px;
+	cursor: pointer;
+}
+
+/*-- footer --*/
+footer{
+	background: url("../img/footer-logo.png") no-repeat left center;
+	height: 40px;
+	position: relative;
+	margin: 1em;
+}
+footer .info{
+	position: absolute;
+	right: 20px;
+}
+footer .info p{
+	font-size:0.9em;
+	line-height: 1.3em;
+}
+footer .info p a{
+	color: #e12d80;
+	text-decoration: none;
+	cursor: pointer;
+}
