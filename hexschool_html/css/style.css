@@ -264,6 +264,7 @@ section .highlight{
 
 /*	--contact--  */
 .contact{
+	margin-top:3em;
 	height:400px ;
 	width: 100%;
 	background-image: linear-gradient(to bottom, #00644b, #009772);
