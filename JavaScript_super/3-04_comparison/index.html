@@ -28,6 +28,17 @@
     <script>
         var number = Math.floor(Math.random()*6);
         var answer = parseInt(window.prompt('猜數字遊戲，請出入0～5的數字：'));
+        var message;
+        if(answer === number){
+            message = '恭喜答對嘍！';
+        }else if(answer < number && answer >= 0){
+            message = '猜錯了！數字在大一點！';
+        }else if(answer > number && answer < 6){
+            message = '猜錯了！數字在小一點！';
+        }else{
+            message = '請輸入0-5的數字';
+        }
+        window.alert(message);
     </script>
 </body>
 
