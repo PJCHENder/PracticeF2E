@@ -25,6 +25,16 @@
     </div>
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
+    <script>
+        var hour = new Date().getHours();
+        if(hour >= 19 && hour < 2){
+            window.alert('現在便當打7折');
+        }else if(hour === 9 || hour === 15){
+            window.alert('現在便當買1送1喔！');
+        }else{
+            window.alert('客人要不要買個便當？')
+        }
+    </script>
 </body>
 
 </html>
