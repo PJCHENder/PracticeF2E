@@ -26,7 +26,11 @@
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
     <script>
-    console.log(window.confirm('遊戲開始！準備好了嗎？'));
+    if(window.confirm('遊戲開始，準備好了嗎？')){
+        console.log('遊戲已經開始');
+    }else{
+        console.log('遊戲結束了');
+    }
     </script>
 </body>
 
