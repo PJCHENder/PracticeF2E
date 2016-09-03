@@ -20,7 +20,7 @@
     <!--    main-wrapper    -->
     <div class="main-wrapper">
         <section>
-            <!--        實做時填入        -->
+            <p id="output"></p>
         </section>
     </div>
     <!--  footer  -->
@@ -31,6 +31,7 @@
             return price + price*0.05;
         }
         console.log('咖啡機的價格為'+total(8000)+'元（含稅）');
+        document.getElementById('output').textContent = '咖啡機的價格為'+total(8000)+'元（含稅）';
     </script>
 </body>
 
