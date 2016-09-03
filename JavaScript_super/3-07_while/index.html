@@ -28,15 +28,17 @@
     <script>
         var enemy_hp = 100;
         var attack;
+        var count = 0;
         window.alert('戰鬥開始！');
         while(enemy_hp > 0){
             attack = Math.floor(Math.random()*31);
             console.log('怪物受到 '+attack+' 點的傷害！')
-            enemy_hp = enemy_hp - attack;
+            enemy_hp -= attack;
             console.log('怪物血量為'+enemy_hp);
             console.log('------');
+            count++;
         }
-        console.log('打倒怪獸了！');
+        console.log('在第'+count+'回合打倒怪獸了！');
     </script>
 </body>
 
