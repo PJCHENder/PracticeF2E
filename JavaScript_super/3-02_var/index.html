@@ -28,7 +28,11 @@
     <script>
         var answer = window.prompt('是否要閱讀遊戲說明？');
         if(answer === 'yes'){
-            window.alert('處碰螢幕便會跳躍避開障礙物。');
+            window.alert('觸碰螢幕便會跳躍避開障礙物。');
+        } else if(answer === 'no'){
+            window.alert('遊戲啟動中...');
+        } else{
+            window.alert('請輸入 yes 或 no');
         }
     </script>
 </body>
