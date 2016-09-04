@@ -34,7 +34,14 @@
         var hour = now.getHours();      //  18
         var min = now.getMinutes();     //  19
         
-        var output = year + '/' + (month+1) + '/' + date + ' ' + hour + ':' + min;
+        var ampm;
+        if(hour > 12){
+            ampm = ' p.m.';
+        }else{
+            ampm = ' a.m.';
+        }
+        
+        var output = year + '/' + (month+1) + '/' + date + ' ' + hour%12 + ':' + min + ampm;
         document.getElementById('time').textContent = output;
     </script>
 </body>
