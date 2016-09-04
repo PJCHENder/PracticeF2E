@@ -21,11 +21,22 @@
     <!--    main-wrapper    -->
     <div class="main-wrapper">
         <section>
-            <!--        實做時填入        -->
+            <p>最後連線的日期時間：<span id="time"></span></p>
         </section>
     </div>
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
+    <script>
+        var now = new Date();
+        var year = now.getFullYear();   //  2016
+        var month = now.getMonth();     //  8 + 1
+        var date = now.getDate();       //  4
+        var hour = now.getHours();      //  18
+        var min = now.getMinutes();     //  19
+        
+        var output = year + '/' + (month+1) + '/' + date + ' ' + hour + ':' + min;
+        document.getElementById('time').textContent = output;
+    </script>
 </body>
 
 </html>
