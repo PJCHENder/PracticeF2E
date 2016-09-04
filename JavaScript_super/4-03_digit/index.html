@@ -26,6 +26,17 @@
     </div>
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
+    <script>
+        
+        var addZero = function(num, digit){
+            var numString = String(num);
+            while(numString.length < digit){
+                numString = '0' + numString;
+            }
+            return numString;
+        };
+        console.log(addZero(15,3));
+    </script>
 </body>
 
 </html>
