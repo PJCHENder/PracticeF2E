@@ -21,7 +21,10 @@
     <!--    main-wrapper    -->
     <div class="main-wrapper">
         <section>
-            <!--        實做時填入        -->
+            <h2>Standards Revival MP3</h2>
+            <div id="list">
+                
+            </div>
         </section>
     </div>
     <!--  footer  -->
@@ -35,7 +38,25 @@
             }
             return numString;
         };
-        console.log(addZero(15,3));
+        
+        var songs = [
+            'Stella By Starlight',
+            'Satin Doll',
+            'Caravan',
+            'Besame Mucho',
+            'My Favoriate Things',
+            'Taking A Chance on Love',
+            'Fly Me To The Moon',
+            'Waltz For Debby',
+            'Willow Weep For Me',
+            'Bluesette'
+        ];
+        
+        for(var i = 0; i < songs.length; i++){
+            var paragraph = document.createElement('p');
+            paragraph.textContent = addZero(i+1, 2) + '.' + songs[i];
+            document.getElementById('list').appendChild(paragraph);
+        }
     </script>
 </body>
 
