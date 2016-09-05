@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--   meta:vp  -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--  meta:compat  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>範例樣版</title>
+    <link rel="stylesheet" href="/css/style.css"> </head>
+
+<body>
+    <!--   Header  -->
+    <header>
+        <div class="header-contents">
+            <h1>標題</h1>
+            <h2>子標題</h2> </div>
+    </header>
+    <!--    main-wrapper    -->
+    <div class="main-wrapper">
+        <section>
+            <ul id='list'>
+            <p>test</p>
+            </ul>
+        </section>
+    </div>
+    <!--  footer  -->
+    <footer>JavaScript Samples</footer>
+    <script>
+        var todo = ['完成設計方案','整理資料','申請加入讀書會','買牛奶'];
+        todo.push('去看牙醫');
+        for(var i = 0; i < todo.length; i++){
+
+            // 透過這行可以產生<li></li>
+            var li = document.createElement('li');  
+
+            //  將陣列中的元素儲存到 <li></li>標籤的內容中。
+            li.textContent = todo[i];
+
+            //  appendChild 會將 HTML 元素添加至前面取得的元素後
+            //  如果前面取的的元素內已經有其他的子元素，則會添加至原本子元素的後方
+            document.getElementById('list').appendChild(li);
+        }
+    </script>
+</body>
+
+</html>
