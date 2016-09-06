@@ -11,6 +11,16 @@
 	
 	<script src="scripts/respond.min.js"></script>
 	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<style>
+		main article img{
+			max-width: 300px;
+		}
+	</style>
 </head>
 
 <body>
@@ -27,7 +37,7 @@
 	
 		<article class="col span_8">
 	
-			Content
+			<a class="fancybox" rel="group" href="img/1.jpg"><img src="img/1.jpg" alt="" /></a>
 	
 		</article>
 	
@@ -46,7 +56,18 @@
 	</footer>
 
 </div>
+<script type="text/javascript">
 
+	$(document).ready(function() {
+
+		$("a").click(function(event){
+			alert("Thanks for visiting!");
+			event.preventDefault();
+		})
+
+		$(".fancybox").fancybox();
+	});
+</script>
 </body>
 
 </html>
