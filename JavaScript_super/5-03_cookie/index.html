@@ -30,6 +30,7 @@
                 <input type="radio" name="frequency">幾乎不去，沒有看電影的習慣</br>
                 <input type="submit" name="送出" id="submit">
             </form>
+            <button id="remove">刪除 Cookie</button>
         </section>
     </div>
     <!--  footer  -->
@@ -43,7 +44,10 @@
             }else{
                 Cookies.set('answered','yes',{expires: 7});
             }
-            
+        }
+        document.getElementById('remove').onclick = function(){
+            Cookies.remove('answered');
+            alert('Cookie已移除')
         }
     </script>
 </body>
