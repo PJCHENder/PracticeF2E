@@ -102,7 +102,17 @@
         document.getElementById('prev').onclick = function(){
             changeImage(-1);
         }
+    
         showPageNum();
+        
+        /*預先讀入圖片*/
+        var preloadImg = function(path){
+            var imgTag = document.createElement('img');
+            imgTag.src = path;
+        }
+        for (var i = 0; i < images.length; i++){
+            preloadImg(images[i]);
+        }    
     </script>
 </body>
 
