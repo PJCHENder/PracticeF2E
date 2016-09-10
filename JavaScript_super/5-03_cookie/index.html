@@ -35,6 +35,17 @@
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
     <script src="js.cookie.js"></script>
+    <script>
+        document.getElementById('form').onsubmit = function(){
+            if(Cookies.get('answered') === 'yes'){
+                window.alert('你已經回答過了，此問卷只能作答一次');
+                return false;
+            }else{
+                Cookies.set('answered','yes',{expires: 7});
+            }
+            
+        }
+    </script>
 </body>
 
 </html>
