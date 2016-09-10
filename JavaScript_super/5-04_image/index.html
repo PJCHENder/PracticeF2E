@@ -46,15 +46,23 @@
                     <img src="img1.jpg" id='bigimg'>
                 </div>
                 <ul>
-                    <li><img src="thumb-img1.jpg" class="thumb" data-img='img1.jpg'></li>
-                    <li><img src="thumb-img2.jpg" class="thumb" data-img='img2.jpg'></li>
-                    <li><img src="thumb-img3.jpg" class="thumb" data-img='img3.jpg'></li>
+                    <li><img src="thumb-img1.jpg" class="thumb" data-image='img1.jpg'></li>
+                    <li><img src="thumb-img2.jpg" class="thumb" data-image='img2.jpg'></li>
+                    <li><img src="thumb-img3.jpg" class="thumb" data-image='img3.jpg'></li>
                 </ul>
             </div>
         </section>
     </div>
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
+    <script>
+        var thumbs = document.querySelectorAll('.thumb');
+        for(var i = 0; i < thumbs.length; i++){
+            thumbs[i].onclick = function(){
+                console.log(this.dataset.image);
+            };
+        }
+    </script>
 </body>
 
 </html>
