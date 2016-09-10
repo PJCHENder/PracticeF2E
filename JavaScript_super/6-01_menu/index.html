@@ -9,6 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>範例樣版</title>
     <link rel="stylesheet" href="/css/style.css"> 
+    <style>
+        .submenu h3{
+            margin: 0 0 1em 0;
+            font-size: 16px;
+            cursor: pointer;
+            color: #5E78C1;
+        }
+        .submenu h3:hover{
+            color: #b04188;
+/*            text-decoration: underline;*/
+        }
+        .submenu ul{
+            margin: 0 0 1em 0;
+            list-style-type: none;
+            font-size: 14px;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +41,25 @@
     <!--    main-wrapper    -->
     <div class="main-wrapper">
         <section>
-            <!--        實做時填入        -->
+            <div class="sidebar">
+                <div class="submenu">
+                    <h3>1. Getting Started</h3>
+                        <ul class='hidden'>
+                            <li><a href="">- 簡介</a></li>
+                            <li><a href="">- 安裝</a></li>
+                            <li><a href="">- 初次操作</a></li>
+                            <li><a href="">- 解除安裝</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="submenu">
+                <h3>2. How to Use</h3>
+                    <ul class='hidden'>
+                        <li><a href=''>- 基本操作方式</a></li>
+                        <li><a href=''>- 回復到最初狀態</a></li>
+                        <li><a href=''>- 製作外掛工具</a></li>
+                    </ul>
+            </div>
         </section>
     </div>
     <!--  footer  -->
