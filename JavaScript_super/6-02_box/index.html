@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>範例樣版</title>
     <link rel="stylesheet" href="/css/style.css"> 
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <style>
         #box{
             display: none;
@@ -66,6 +67,13 @@
     </div>
     <!--  footer  -->
     <footer>JavaScript Samples</footer>
+    <script>
+    $(document).ready(function(){
+        $('#box_btn').on('click',function(){
+            $('#box').slideToggle();
+        })
+    })
+    </script>
 </body>
 
 </html>
