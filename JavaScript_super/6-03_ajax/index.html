@@ -83,10 +83,25 @@
         //讀取檔案
         $.ajax({url: 'data.json', dataType: 'json'})
         .done(function(data){
-            //資料下載完成後的動作，下載的資料以參數傳入
+            $(data).each(function(){
+//                console.log(this);  
+                if(this.crowded === 'yes'){
+                    var idName = '#'+this.id;
+                    $(idName).find('.check').addClass('crowded');
+                }
+            })
         })
         .fail(function(){
-            //資料下載失敗後的處理動作
+            window.alert('讀取錯誤！');
+        })
+        
+        //點擊之後顯示剩餘空位狀況
+        $('.check').on('click',function(){
+            if($(this).hasClass('crowded')){
+                $(this).text('剩餘空位極少').addClass('red');
+            }else{
+                $(this).text('尚有不少座位').addClass('green');
+            }
         })
     })
     </script>
