@@ -9,14 +9,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>範例樣版</title>
     <link rel="stylesheet" href="/css/style.css"> 
+    <style>
+        #box{
+            display: none;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+        #box ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #box li{
+            padding: 8px 0;
+            color: #20567d;
+            border-bottom: 1px solid  #fff;
+        }
+        .header-contents {
+            position: relative;
+        }
+        #box_btn {
+	        position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #FFF;
+            padding: 6px 20px;
+            border-radius: 0 0 8px 8px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+   <div id="box">
+       <ul>
+           <li>首頁</li>
+           <li>公司簡介</li>
+           <li>業務內容</li>
+           <li>服務支援</li>
+           <li>和我們洽詢</li>
+       </ul>
+   </div>
     <!--   Header  -->
     <header>
         <div class="header-contents">
-            <h1>標題</h1>
-            <h2>子標題</h2> </div>
+           <div id="box_btn">Menu</div>
+            <h1>滑開、收摺選單框</h1>
+            <h2>使用動畫功能</h2> 
+        </div>
     </header>
     <!--    main-wrapper    -->
     <div class="main-wrapper">
