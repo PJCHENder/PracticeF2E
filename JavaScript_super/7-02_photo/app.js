@@ -30,6 +30,21 @@ $(document).ready(function(){
                 )
             })
             
+            if($('#pagination').children().length === 0){
+                $('#pagination').append(
+                    $('<a class="next"></a>').attr('href','#').text('看更多相片').on('click',function(e){
+                        e.preventDefault();
+                        if(photoData.pagination.next_url){
+                            getData(photoData.pagination.next_url);
+                        }
+                    })
+                )
+                
+            }
+            
+            if(!photoData.pagination.next_url){
+                $('.next').remove();
+            }
         })
         .fail(function(){
             $('#gallery').text(textStatus);
