@@ -9,6 +9,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>範例樣版</title>
     <link rel="stylesheet" href="/css/style.css"> 
+    <style>
+        *{
+/*            border: 1px solid  #333;*/
+        }
+        .list{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .seminar{
+            float: left;
+            margin: 10px 10px 10px 0;
+            border: 1px solid #23628f;
+            padding: 4px;
+            width: 25%;
+        }
+        .list h2{
+            margin: 0 0 2em 0;
+            font-size: 16px;
+            text-align: center;
+        }
+        .check{
+            margin: 0;
+            padding: 8px;
+            font-size: 12px;
+            color: #FFF;
+            background-color: #23628f;
+            text-align: center;
+            cursor: pointer;
+        }
+        .red{
+            background-color: #e33a6d;
+        }
+        .green{
+            background-color: #7bc52e;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +59,20 @@
     <!--    main-wrapper    -->
     <div class="main-wrapper">
         <section>
-            <!--        實做時填入        -->
+            <ul class="list">
+                <li class="seminar" id="js">
+                    <h2>JavaScript 讀書會</h2>
+                    <p class="check">確認剩餘空位狀況</p>
+                </li>
+                <li class="seminar" id="security">
+                    <h2>網路安全對策講座</h2>
+                    <p class="check">確認剩餘空位狀況</p>
+                </li>
+                <li class="seminar" id="uiux">
+                    <h2>程式馬拉松</h2>
+                    <p class="check">確認剩餘空位狀況</p>
+                </li>
+            </ul>
         </section>
     </div>
     <!--  footer  -->
