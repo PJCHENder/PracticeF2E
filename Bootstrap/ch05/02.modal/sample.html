@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title</title>
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="../assets/js/html5shiv.js"></script>
+			<script src="../assets/js/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			.tab-pane{
+				padding-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-default" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">CSS可樂</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">
+								<i class="glyphicon glyphicon-th"></i> 關於CSS可樂
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="glyphicon glyphicon-list-alt"></i> 課程資訊
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="glyphicon glyphicon-map-marker"></i> 教室位置
+							</a>
+						</li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href='#modal-login' data-toggle="modal"><i class="glyphicon glyphicon-user"></i> 學員登入</a></li>
+						<li><a href='#modal-sign-in' data-toggle="modal"><i class="glyphicon glyphicon-log-in"></i> 新生註冊</a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-cog"></i> 個人資料維護</a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-envelope"></i> 個人訊息</a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-question-sign"></i> 求助</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="row">
+			<div class="page-header">
+			  <h1>CSS3 視覺及動態特效應用班</h1>
+			</div>
+			<div class="col-sm-12">
+				<div role="tabpanel">
+				    <!-- Nav tabs -->
+				    <ul class="nav nav-tabs" role="tablist">
+				        <li class="active">
+				            <a href="#tab" data-toggle="tab">課程資訊</a>
+				        </li>
+				        <li>
+				            <a href="#tabA" data-toggle="tab">適合對象</a>
+				        </li>
+				        <li>
+				            <a href="#tabB" data-toggle="tab">報名資格</a>
+				        </li>
+				        <li>
+				            <a href="#tabC" data-toggle="tab">立即報名</a>
+				        </li>
+				    </ul>
+				
+				    <!-- Tab panes -->
+				    <div class="tab-content">
+				        <div role="tabpanel" class="tab-pane active" id="tab">
+							<p>手機網頁已成為企業需求，你是否認為學會 RWD 就完整了？行動裝置對 CSS3 的支援度比起電腦來說要更加的完整全面，本課程特別針對 CSS3 的各項新增屬性、應用方式、應用問題、詳細的屬性實作…等有所安排外，更讓您學習到 google 上查不到的 CSS3 應用細節與實作會遇到的問題，在手機網頁設計上面實用度完全爆表．</p>
+							<p>在此課程中，老師針對教學設計了原創的教學範例、酷炫實例、業界常見效果及應用、專案應用範例…等多種層面的實務範例，更重要的是所有學習到的範例都可以延伸更多的實務應用，加強你的 CSS 結構觀念、應用觀念、選取器的選取效能改善、CSS3 與 jQuery 的合併應用與使用時機．</p>
+							<p>許多設計師都說既然主流瀏覽器不支援，學習 CSS3 要做什麼？目前的 CSS3 雖然在某萬惡的瀏覽器上面支援度有稍稍的不完整，但在 Chrome 以及 Firefox 上的支援度，已經是非常完整了，而在行動裝置上 CSS3 的支援度已超過9成以上都支援呢！面對著未來行動上網越加盛行的時代，越是完整掌握 CSS3 的技術，才越能掌控先機，並快速開發你的行動裝置與桌上型電腦網站。</p>
+							<p>對於許多人關注的 HTML5 JavaScript 動畫技術來說，CSS3 的動畫效能對行動裝置具有更佳的優勢，當別人還在學習用程式撰寫動畫時，你已經可以利用簡單的 CSS3 就完成了，此外，針對於視覺效果越來越豐富的網頁設計趨勢，CSS3 更是你不可不學習的一門技術。</p>
+							<p>Dreamweaver 近幾年不斷的更新版本，但事實上對於 CSS 的功能卻不見有很大的進步，許多入門使用者往往只會利用 Dreamweaver 內建的 CSS 編輯器來製作網頁，然 CSS 本身有許多屬性是在 Dreamweaver CSS 編輯器中無法看到的，更不用談新的 CSS3 屬性了！學習新的 CSS3 語法，讓你不用受限於軟體本身的限制，想怎麼發揮創意就怎麼發揮！</p>
+							<p>在 CSS3 中增加的強大選取器，讓你不用辛苦的添加一堆 class 或是 ID ，讓你可以用最精簡的原始碼，甚至僅需要一個 class 即可完成多層次的內容設計，不僅 HTML 原始碼極度乾淨，而 CSS 的控制也做到極大的便利性，讓設計師不再需要為了一點小小的需求就去修改 HTML 原始碼，或是為了預備未來的修改便利性而增加 HTML 中的 CSS class，身為網頁設計師，CSS3 絕對是現在與未來的一大利器，而此選取器也會於本課程中不斷的被使用，並了解各種便利的選取器的作用與問題，讓你未來在設計網頁時，可以無往不利。</p>
+				        </div>
+				        <div role="tabpanel" class="tab-pane" id="tabA">
+							<ol>
+								<li>對於網頁設計有興趣與工作需求者</li>
+								<li>網頁設計師或美術設計人員</li>
+								<li>上班族及學生族自我進修</li>
+							</ol>
+				        </div>
+				        <div role="tabpanel" class="tab-pane" id="tabB">
+							<ol>
+								<li>必須已對基本的網頁設計有製作經驗者（基礎課程請參考「Dreamweaver & CSS 網頁版型設計班」）</li>
+								<li>必須已對 CSS2 語法 DIV 排版有撰寫經驗者（課程請參考「CSS 語法 div 版面設計專修班」）</li>
+								<li>完全沒有學過 CSS3 程式設計的人也可以參加這個課程</li>
+							</ol>
+				        </div>
+				        <div role="tabpanel" class="tab-pane" id="tabC">
+							<button type="button" class="btn btn-sm btn-default">我是新生</button>
+							<button type="button" class="btn btn-sm btn-default">我是舊生</button>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="modal fade" id="modal-login">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">學員登入</h4>
+				</div>
+				<div class="modal-body">
+					登入表單
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-sign-in">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">新生註冊</h4>
+				</div>
+				<div class="modal-body">
+					註冊表單
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">註冊</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../assets/js/jquery1.11.1.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	
+	</body>
+</html>

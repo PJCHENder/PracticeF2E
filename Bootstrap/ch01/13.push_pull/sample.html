@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title</title>
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="../assets/js/html5shiv.js"></script>
+			<script src="../assets/js/respond1.4.2.min.js"></script>
+		<![endif]-->
+		<style>
+		.container-fluid{
+			background-color: #eee;
+			margin-top: 100px;
+		}
+		.row :nth-child(1){
+			background-color: #aaa;
+			min-height: 300px;
+		}
+		.row :nth-child(2){
+			background-color: #999;
+			min-height: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-sm-push-8"> 第一欄 </div>
+				<div class="col-sm-8 col-sm-pull-4"> 第二欄 </div>
+			</div>
+		</div>
+		<script src="../assets/js/jquery1.10.2.js"></script>
+		<script src="../assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
