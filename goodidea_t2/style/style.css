@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+        display: block;
+}
+body {
+        line-height: 1;
+}
+ol, ul {
+        list-style: none;
+}
+blockquote, q {
+        quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: '';
+        content: none;
+}
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+
+
+/*ClearFix*/
+
+.clearfix:after{
+	content: "";
+	display: table;
+    clear: both;
+}
+.container{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Custom Style Start*/
+
+/*Header Start*/
+.header{
+	background-color: #535151;
+	height: 70px;
+
+}
+.header .logo {
+	width: 202px;
+	height: 34px;
+	float: left;
+	margin-top: 13px;
+	background: url("../images/logo.png");
+}
+.header .nav{
+	display: inline-block;
+	float: left;
+	margin-top: 25px;
+	margin-left: 60px
+}
+.header .nav li{
+	display: inline-block;
+	margin: 0 30px;
+}
+.header .nav li a{
+	font-family: Helvetica;
+	color: #C2C2C2;
+	text-decoration: none;
+}
+.header .nav .active a{
+	color: #FFF;
+}
+.header .nav li a:hover{
+	color: #FFF;
+}
+.header .car{
+	float: right;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+.header .car img{
+	width: 80%;
+}
+
+/*Banner Start*/
+.banner{
+	min-height: 450px;
+	background: url("../images/cover.jpg");
+	background-size: cover;
+	overflow: auto;
+}
+.banner .banner_box{
+	height: 140px;
+	width: 450px;
+	margin: 200px auto 110px;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.5);
+}
+.banner .banner_box h2{
+	font-size: 42px;
+	text-align: center;
+	padding-top: 25px;
+}
+.banner .banner_box button{
+	width: 150px;
+	height: 40px;
+	margin: 15px auto;
+	border: 0;
+	background-color: #303132;
+	color: #FFF;
+	font-family: Helvetica;
+	font-size: 14px;
+	cursor: pointer;
+}
+.banner_bottom{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 14px;
+	color: #666;
+	background-color: #E3E3E3;
+}
+
+/*Product Start*/
+
+.product h2{
+	text-align: center;
+	color: #333;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	font-size: 36px;
+	font-weight: bold;
+}
+.product hr{
+	width: 30px;
+	border: 1px solid #616161;
+}
+.product h3{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	font-size: 16px;
+	color: #666;
+	font-family: Helvetica;
+}
+.product .product_img{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+/*Footer Start*/
+
+.footer{
+	background-color: #535151;
+	padding-top: 60px;
+}
+
+.footer_info{
+	display: flex;
+	justify-content: space-around;
+}
+.footer h5{
+	font-family: Helvetica;
+	font-size: 14px;
+	color: #D4D4D4;
+}
+.footer .social-icon{
+	
+	width: 30%;
+}
+.footer .social-icon h5{
+	letter-spacing: 1px;
+	padding-left: 10px;
+}
+
+.footer .social-icon .icon{
+
+	margin-top: 5px;
+	height: 28px;
+	width: 37px;	
+	float: left;
+	cursor: pointer;
+}
+
+.footer .social-icon .facebook{
+	background-image: url(../images/icons.png);
+	background-position: 5px 0;
+}
+.footer .social-icon .twitter{
+	background-image: url(../images/icons.png);
+	background-position: -38px 0;
+}
+.footer .social-icon .pinterest{
+	background-image: url(../images/icons.png);
+	background-position: -83px 0;
+}
+.footer .social-icon .instagram{
+	background-image: url(../images/icons.png);
+	background-position: -130px 0;
+}
+.footer .register{
+	width: 30%;
+}
+.footer .register .input-email{
+	width: 98%;
+	height: 24px;
+	margin-top: 5px;
+	border: 1px solid #FFF;
+	background-color: #535151;
+	padding-left: 5px;
+	color: #FFF;
+}
+.footer .register .input-email:focus{
+	outline: none;
+}
+.footer .register .input-email::-webkit-input-placeholder {
+    color: #FFF;
+}
+
+.footer .register .btn{
+	float: right;
+	padding: 6px 8px;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #D3D3D3;
+	border: 0;
+	color: #333;
+}
+
+.footer .contact{
+	width: 30%;
+	text-align: center;
+	line-height: 120%;
+}
+.footer .contact p{
+	color: #EFEFEF;
+	font-family: Helvetica;
+	font-size: 13px;
+}
+.footer .copyright{
+	text-align: center;
+	padding: 60px 0;
+	color: #D4D4D4;
+	font-family: Helvetica;
+	font-size: 12px;
+}
