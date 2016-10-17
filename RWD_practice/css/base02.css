@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* clearfix */
+
+.cf {
+    zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/*所有裝置共同的樣式及手機、小型平板*/
+
+body {
+    width: 100%;
+    background-color: #fff;
+    font-family: "微軟正黑體", Helvetica, sans-serif;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding: 15px 5px 7px 5px;
+    width: 90%;
+}
+
+header h1 img {
+    width: 100%;
+    max-width: 265px;
+}
+
+header ul#s_nav {
+    margin-bottom: 15px;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+header ul#s_nav li {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+header ul#s_nav li a {
+    display: block;
+    font-size: 0.8em;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+header ul#s_nav li.contact a {
+    background: url(../images/icn_contact.jpg) no-repeat left center;
+}
+
+header ul#s_nav li.news a {
+    background: url(../images/icn_news.jpg) no-repeat left center;
+}
+
+header ul#s_nav li.sitemap a {
+    background: url(../images/icn_sitemap.jpg) no-repeat left center;
+}
+
+header p {
+    width: 100%;
+}
+
+header p img {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+
+/*電腦、大型平板版型: 769px ~ 960px*/
+
+@media only screen and (min-width: 769px) {
+    header {
+        position: static;
+        overflow: visible;
+    }
+    header h1 {
+        text-align: left;
+        padding: 15px 5px 7px 5px;
+        width: 280px;
+        float: left;
+    }
+    header h1 img {
+        width: 100%;
+    }
+    header ul#s_nav {
+        float: right;
+        margin-top: 20px;
+        position: static;
+    }
+    header ul#s_nav li {
+        float: left;
+        position: static;
+    }
+}
+
+
+/*電腦版型: 961px以上*/
+
+@media only screen and (min-width: 961px) {
+    header {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
