@@ -1,0 +1,136 @@
+body {
+    padding-top: 50px;
+}
+
+section {
+    margin: 60px 0;
+}
+
+.em_text {
+    color: #1caa98 !important;
+}
+
+.col-md-4 {
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background: #1b222A url("../img/site_showcase_bg.jpg") no-repeat top center;
+    background-size: cover;
+    height: 500px;
+}
+
+.jumbotron h1 {
+    margin-top: 70px;
+    color: #FFF;
+}
+
+.jumbotron p {
+    margin-bottom: 40px;
+    color: #FFF;
+}
+
+.jumbotron img.app_btn {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.jumbotron img.showcase_img {
+    width: 342px;
+}
+
+img.demo {
+    border: 1px solid #CCC;
+}
+
+section#feature {
+    background-color: #1caa98;
+    color: #FFF;
+    padding: 40px 0;
+}
+
+section#feature ul li {
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 2em;
+}
+
+section#feature ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 30px 0 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+    float: left;
+    padding: 0 10px;
+}
+
+footer ul li a {
+    color: #FFF;
+}
+
+footer p {
+    float: right;
+}
+
+#title_bar {
+    margin: 0;
+    padding: 0;
+    background-color: #1CAA98;
+}
+
+#title_bar h1 {
+    padding: 20px 0;
+    margin: 0;
+    color: #FFF;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {
+    .jumbotron {
+        height: 400px;
+    }
+    .jumbotron h1 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+        height: 350px;
+    }
+    section#feature {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .jumbotron {
+        height: 400px;
+        background-image: none;
+        text-align: center;
+    }
+    .jumbotron img.app_btn {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    footer p {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .pj_btn {
+        margin-bottom: 10px;
+    }
+}
