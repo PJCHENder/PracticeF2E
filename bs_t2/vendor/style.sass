@@ -1,0 +1,89 @@
+// import bootstrap file
+@import _bootstrap.scss
+
+// Variables
+$primary-color: #3b5a76
+$background-color: #EDEDED
+$text-color: #363636 
+$font: 16px
+
+body
+	font-family: 'Open Sans', Arial, Tahoma
+	color: $text-color
+	background-color: $background-color
+	font-size: $font
+
+h2
+	font-weight: 700
+	text-transform: uppercase
+	line-height: 1.4em
+	font-size: 1.5em
+.row
+	margin-bottom: 20px
+
+.primary, strong, h2
+	color: $primary-color
+
+.container-main
+	background-color: #FFF
+	margin-top: 80px
+	padding: 0 30px 30px 30px
+
+header
+	min-height: 100px
+	overflow: auto
+	& h1
+	margin: 0
+	padding: 20px 0 0 
+	font-size: 2.2em
+	font-weight: 700
+	text-trasnform: uppercase
+	letter-spacing: -1px
+	text-align: center
+	line-height: 1.4em
+
+.profile-img
+	width: 160px
+	display: block
+	margin: -80px auto auto
+
+.line
+	max-width: 100%
+
+.contact-list
+	padding: 0
+	margin: 0
+	& li
+		list-style-type: none
+		font-weight: bold
+		line-height: 3.2em
+	& span
+		display: block
+		margin: 0
+		padding: 0
+		line-height: 0.1em
+		margin-left: 37px
+		font-size: 15px
+		color: #ccc
+
+.media
+	background-color: $background-color
+	padding: 10px
+	& .media-left
+		width: 15%
+
+.work-list
+	margin: 0
+	padding: 0
+	& li
+		list-style-type: none
+		float: left
+		padding: 0 10px 
+		margin-bottom: 30px
+
+footer
+	background-color: $primary-color
+	color: #FFF
+	text-align: center
+	padding-top: 20px
+	padding-bottom: 20px
