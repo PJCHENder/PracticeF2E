@@ -1,0 +1,200 @@
+// import bootstrap file
+@import _bootstrap.scss
+
+@mixin ff($ff:'PT Serif')
+	font-family: $ff
+
+// header
+.header
+	background-color: #360836
+	& ul
+		margin: 0
+		padding: 0
+		& li
+			height: 60px
+			font-size: 16px
+			line-height: 60px
+			padding-right: 10px
+			padding-left: 10px
+			display: inline-block
+			& a
+				color: #FFF
+				transition-duration: 0.5s
+				&:hover
+					color: #FFF
+					font-size: 20px
+					text-decoration: none
+					text-shadow: 2px 2px #CCC
+		& .active
+			& a
+				color: #FF5E8B
+
+section.banner
+	& .jumbotron
+		background: url('../img/cover.png') no-repeat center center
+		background-size: cover
+		color: #FFF
+		height: 500px
+		margin-bottom: 0
+		& h1, h3, p
+			+ff
+		& h1
+			font-style: italic
+			margin-bottom: 5px
+		& h3
+			margin-top: 5px
+			&+p
+				margin-top: 140px
+				margin-bottom: 20px
+		& p
+			font-size: 16px
+			margin-bottom: 0
+		& .title1
+			width: 300px
+			height: 50px
+			line-height: 50px
+			background-color: #FF0048
+			margin: 12px auto 0 auto
+			position: relative
+			+ff('Helvetica')
+			&:before
+				content: ""
+				position: absolute
+				width: 0
+				height: 0
+				border-width: 15px
+				border-style: solid
+				border-color: #FF0048 transparent transparent transparent
+				bottom: -30px
+				left: 50%
+				margin-left: -15px
+				z-index: 1
+
+section.figures
+	& .col-sm-3
+		padding: 0
+		& .img-responsive
+			width: 100%
+		& .img-hover
+			display: block
+			position: relative
+		& figure
+			position: relative
+			&:hover
+				& figcaption
+					background-color: #FF0048
+					opacity: 0.6
+				& h4
+					font-size: 30px
+			& figcaption
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: #FF0048
+				opacity: 0
+				transition: 0.5s
+				& h4
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					color: #FFF
+					transition: 0.5s
+	& .title2
+		// height: 45px
+		width: 100%
+		margin-top: 100px
+		background-color: #FF0048
+		text-align: center
+		padding: 15px
+		color: #FFF
+		font-size: 20px
+		position: relative
+		&:after
+			content: ""
+			width: 0
+			height: 0
+			border-width: 15px
+			border-style: solid
+			border-color: #FF0048 transparent transparent transparent
+			position: absolute
+			bottom: -30px
+			left: 50%
+			margin-left: -15px
+
+section.folks
+	margin-bottom: 30px
+	& h3
+		+ff
+		color: #FF0048
+		margin-top: 50px
+		margin-bottom: 50px
+	& .col-sm-3
+		padding: 0
+		& h3
+			text-align: center
+			+ff
+			font-size: 32px
+			margin-top: 14px
+			margin-bottom: 0px
+		& p
+			text-align: center
+			margin-bottom: 36px
+			font-size: 10px
+	& .contact_btn
+		background-color: #000
+		width: 200px
+		margin: 30px auto
+		padding: 10px
+		color: #FFF
+		cursor: pointer
+		transition: 0.5s
+		&:hover
+			background-color: #FF0048
+section.info
+	background: #333 url("../img/bg.jpg") no-repeat center center
+	background-size: cover
+	color: #FFF
+	padding-top: 60px
+	& h3
+		+ff
+		font-size: 32px
+	& .left
+	& .right
+		margin-top: 160px
+	& .text-center
+		margin-top: 60px
+		margin-bottom: 60px
+	& .col-sm-offset-1
+		margin-left: 12.33333%
+	& .col-sm-offset-2
+		margin-left: 9.66667%
+	& .back_top_btn
+		background-color: #FFF
+		width: 200px
+		margin: 30px auto
+		padding: 10px
+		color: #000
+		cursor: pointer
+		transition: 0.5s
+		&:hover
+			background-color: #FF0048
+			color: #FFF
+.footer
+	padding: 20px
+	& a
+		color: #FF0048
+@media only screen and (max-width: 768px)
+	& section.info
+		& .right
+			margin-top: 0px
+		& .text-center
+			display: none;
+		& .col-sm-offset-1
+			margin: 0
+		& .col-sm-offset-2
+			margin: 0
+
+				
