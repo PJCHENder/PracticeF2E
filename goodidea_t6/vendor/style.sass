@@ -1,0 +1,284 @@
+body
+	background: url('../img/bg.jpg') repeat
+section.background-top
+	background-color: #171717
+	height: 80px
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: -1
+section.page
+	// background: url('../img/bg.jpg') repeat
+.header
+	background: url('../img/subbg.gif') repeat
+	margin: 10px 0 0	
+	padding: 30px 0 15px
+	border: 1px solid #ccc
+	box-shadow: 0px 0px 2px #777;
+	.pull-right
+		text-align: right
+	.social-icon ul li
+		width: 27px
+		height: 27px
+		cursor: pointer
+		background: url('../img/social.png') no-repeat
+		&.facebook
+			background-position: 0px top
+			&:hover
+				background-position: 0px -27px
+		&.twitter
+			background-position: -37px top
+			&:hover
+				background-position: -37px -27px
+		&.flickr
+			background-position: -74px top
+			&:hover
+				background-position: -74px -27px
+		&.dribbble
+			background-position: -111px top
+			&:hover
+				background-position: -111px -27px
+		&.rss
+			background-position: -150px top
+			&:hover
+				background-position: -150px -27px
+
+@media only screen and (max-width: 767px)
+	.header
+		.logo
+			text-align: center
+		.pull-right
+			float: none !important
+			text-align: center
+			margin-top: 10px
+
+.nav-block
+	margin-top: 30px
+	.col-md-9
+		// height: 50px
+	.navbar
+		box-shadow: 0px 0px 2px #777;
+		border-radius: 0
+		border: 0px
+		li
+			border-right: 1px solid  #eee
+			a
+				color: #333
+				&:hover
+					background-color: #6FC600
+					color: #FFF
+			&.active a
+				background-color: #6FC600
+				color: #FFF
+	.search
+		box-shadow: 0px 0px 2px #777;
+		background-color: #FFF
+		padding: 8px 0
+		& .input-group
+			margin: 0 auto
+			width: 90%
+		& .form-control
+			background-color: #EEE
+		& .btn-default
+			background-color: #EEE
+@media only screen and (max-width: 992px)
+	.navbar-nav, .navbar
+		margin: 0
+
+.banner
+	margin-top: -20px
+@media only screen and (max-width: 992px)
+	.banner
+		margin-top: 0px
+
+.box-shadow
+	box-shadow: 0px 0px 5px #777;
+
+section.feature
+	background: url('../img/subbg.gif') repeat left top
+	margin: -30px 15px 0
+	overflow: auto
+	& .feature-block
+		background-color: #EEE
+		padding: 15px
+		transition: 1s
+		&:hover
+			background-color: rgba(0,0,0,0.6)
+			& h3, p
+				color: #FFF
+
+		& h3
+			font-size: 16px
+			font-weight: bold
+		& img
+			padding: 15px 0
+		& button
+			margin: 15px 0
+		& .btn
+			border-radius: 0
+			padding: 6px 20px
+		& .btn-default
+			background-color: #DDD
+			border: 0
+
+section.content
+	background: url('../img/subbg.gif') repeat left top
+	margin: 0px 15px
+	padding-top: 35px
+	overflow: auto
+	& .content-block
+		& h3
+			font-weight: bold
+			padding: 10px 0
+		& .img-welcome
+			margin-bottom: 30px
+		& ul.reason
+			list-style: none
+			padding: 0
+			& li
+				height: 60px	
+				line-height: 50px
+				margin: 10px 0
+				border-bottom: 1px solid #CCC
+			& .circle
+				background-color: #CCC
+				border-radius: 50%
+				width: 50px
+				height: 50px
+				float: left
+				margin-right: 10px
+				text-align: center
+				color: #FFF
+		& .news-data
+			background-color: #80b600
+			display: inline-block
+			padding: 2px 7px
+			color: #FFF
+			font-weight: bold
+		& .news-block + .news-block
+			margin-top: 20px
+
+section.featured-work
+	background: url('../img/subbg.gif') repeat left top
+	margin: 0px 15px
+	padding-top: 35px
+	padding-bottom: 50px
+	overflow: auto
+	& hr
+		border-top: 1px solid #CCC
+		margin: 0 15px
+	& h2
+		font-weight: bold
+		margin-left: 15px
+
+section.supplement
+	background: url('../img/subbg.gif') repeat left top
+	margin: 0px 15px 0px
+	padding-top: 10px
+	padding-bottom: 35px
+	overflow: auto
+	position: relative
+	bottom: -70px
+	z-index: 2
+	box-shadow: 0px 0px 2px #777;
+	& .bubble
+		border: 1px solid  #ccc
+		background-color: #EEE
+		padding: 10px 15px
+		border-radius: 4px
+		position: relative
+		z-index: 2
+		&:before
+			content: ""
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 20px 20px 0 0
+			border-color: #EEE transparent transparent transparent
+			position: absolute
+			bottom: -15px
+			left: 0px
+			z-index: 1
+		&:after
+			content: ""
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 19px 19px 0 0
+			border-color: #CCC transparent transparent transparent
+			position: absolute
+			bottom: -18px
+			left: -1px
+	& .bubble-photo
+		margin-top: 30px
+		& img
+			float: left
+			margin-right: 10px
+		& p
+			margin: 0
+			& a
+				color: #80b600
+				font-weight: bold
+				font-style: italic
+	& form
+		& .form-group
+			margin-bottom: 5px			
+		& .form-control
+			background-color: #EEE
+			border: 1px solid #CCC
+			&::-webkit-input-placeholder
+				color: #888
+		& textarea
+			margin-bottom: 15px
+		& .btn
+			color: #FFF
+			font-weight: bold
+			border-radius: 0
+			&.btn-clear
+				background-color: #111
+			&.btn-send
+				background-color: #80b600
+	& .flickr
+		& .row
+			margin: 0 auto
+			& .col-xs-3
+				padding: 1px
+			& img
+				width: 100%
+				margin: 0 auto
+
+
+section.background-bottom
+	background-color: #171717
+	height: 120px
+	position: relative
+	bottom: 0
+	width: 100%
+	z-index: -1
+	& footer
+		padding-bottom: 7px
+		position: absolute
+		bottom: 0
+		left: 30px
+		color: #666
+		font-family: Helvetica
+		& .copyright
+			& strong
+				color: #80b600
+		& .bottom-nav
+			font-weight: bold
+			& .active
+				color: #80b600
+			& li+li:before
+				content: "|"
+				padding-right: 10px
+@media only screen and (max-width: 992px)
+	section.background-bottom
+		height: 130px
+		& footer
+			padding-bottom: 20px
+			& .bottom-nav
+				display: none
+
+
+		
