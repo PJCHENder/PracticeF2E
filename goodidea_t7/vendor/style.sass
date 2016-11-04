@@ -1,0 +1,418 @@
+$red_color: #EE3023
+
+@media only screen and (min-width: 1200px)
+	.container
+		width: 970px
+
+
+body
+	background-color: #F2F2F2
+	font-family: Helvetica
+
+header.header
+	padding-top: 20px
+	margin-bottom: 25px
+	& .header-contact
+		& p
+			display: inline-block
+			padding-left: 20px
+			& a
+				color: #333
+				display: block
+				text-decoration: none
+	& .header-content
+		& .header-logo
+			img
+				margin-top: 6px
+		& .header-login
+			background-color: #EEEEEE
+			border: 2px solid #F7F7F7
+			border-radius: 3px
+			& ul
+				margin: 0
+				& li
+					padding: 5px 15px
+				& li:first-child
+					border-right: 2px solid #DDD
+					a
+						color: #333
+						&:hover
+							color: #999
+				& li:nth-child(2)
+					a 
+						color: #333
+						text-decoration: underline
+						font-weight: bold
+						&:hover
+							color: #999
+				& li:last-child
+					padding: 5px 2px
+				& .btn
+					padding: 6px 35px
+					font-size: 16px
+				& .btn-danger
+					background-color: $red_color
+					font-weight: bold
+					&:hover
+						background-color: darken($red_color, 10)
+@media only screen and (max-width: 768px)
+	header.header		
+		& .header-contact
+			display: none					
+		& .header-content
+			& .header-logo
+				float: none !important
+				& img
+					margin: 10px auto 20px
+					
+			& .header-login
+				float: none !important
+				text-align: center
+						
+nav.navbar
+	margin-bottom: 60px
+	& .nav
+		& li
+			padding-bottom: 8px
+			& a
+				border-right: 1px solid #CCC
+				padding: 6px 24px
+				margin-top: 10px
+				font-family: 'Oswald', sans-serif
+			&:hover
+				background-color: #EEE
+	& .navbar-form
+		& .form-control
+			border-radius: 0 20px 20px 0
+			background-color: #EEE
+			border-width: 1px 1px 1px 0px
+			box-shadow: none
+		& .input-group-addon
+			border-radius: 20px 0 0 20px
+			border-width: 1px 0 1px 1px
+.navbar-default .navbar-nav > li > a
+	color: #111
+@media only screen and (max-width: 768px)
+	nav.navbar
+		& .nav
+			& li
+				padding-bottom: 8px
+				& a
+					border-right: 0px
+					border-bottom: 1px solid #CCC
+					margin: 0
+					padding: 10px
+					text-align: center
+
+section.filter
+	background-color: #FFF
+	padding-top: 20px
+	padding-bottom: 20px
+	position: relative
+	&:before
+		content: "FILTER"
+		background-color: #333
+		position: absolute
+		color: #FFF
+		padding: 3px 10px
+		top: -25px
+		left: 10px
+	& .brands
+		& h3
+			font-family: Helvetica, 'Oswald', sans-serif
+			font-size: 16px
+			font-weight: bold
+			text-align: center
+		& .col-xs-6
+			padding: 0
+		& .brand-left
+			padding: 0 15px 0 0
+			margin: 0
+			border-right: 1px solid #DDD
+			li
+				list-style: none
+				text-align: right
+		& .brand-right
+			padding: 0 0 0 15px
+			margin: 0
+			li
+				list-style: none
+	& .group
+		& h3
+			text-align: center
+		& .circle-img
+			width: 115px
+			height: 115px
+			border-radius: 50%
+			background-size: contain
+			&.bg-woman
+				background-image: url("../img/woman-r.jpg")
+			&.bg-man
+				background-image: url("../img/man-r.jpg")
+			&.bg-kids
+				background-image: url("../img/kid-r.jpg")
+			& img
+				margin: 0 auto
+				padding-top: 20px
+		& p
+			padding: 0
+			margin: 0
+			text-align: center
+			&.total
+				color: darken($red_color, 5)
+				font-weight: bold
+				margin-top: 10px
+			&.remainder
+				font-size: 12px
+				text-transform: uppercase
+	& .color
+		& h3
+			font-family: Helvetica, 'Oswald', sans-serif
+			font-size: 16px
+			font-weight: bold
+			text-align: center
+		& .select-color
+			& .color-palette
+				margin: 0
+				padding: 0
+				font-size: 0
+				& li
+					cursor: pointer
+					margin: 0
+					padding: 0
+					width: 20px
+					height: 20px
+					// border: 1px solid
+					&.red
+						background-color: red
+					&.orange
+						background-color: orange
+					&.l-blue
+						background-color: lighten(blue, 20)
+					&.ll-green
+						background-color: lighten(green, 40)
+					&.l-brown
+						background-color: lighten(brown, 20)
+					&.d-purple
+						background-color: darken(purple, 20)
+					&.d-blue
+						background-color: darken(blue, 20)
+					&.green
+						background-color: green
+					&.l-purple
+						background-color: lighten(purple, 20)
+					&.d-brown
+						background-color: darken(brown, 20)
+					&.black
+						background-color: black
+					&.d-green
+						background-color: darken(green, 5)
+					&.purple
+						background-color: purple
+					&.blue
+						background-color: blue
+					&.gray
+						background-color: gray
+					&.d-orange
+						background-color: darken(orange, 20)
+					&.l-green
+						background-color: lighten(green, 20)
+					&.dl-green
+						background-color: lighten(blue,35)
+					&.brown
+						background-color: brown
+					& a
+						display: block
+						width: 100%
+						height: 100%
+						&:hover 
+							border: 2px solid  #CCC
+						&:focus
+							border: 2px solid  #CCC
+		& .price-range
+			margin-top: 30px
+			& .slider-block
+				& .slider-handle
+					background-color: #FFF
+					background-image: none
+					border: 2px solid  #CCC
+				& .slider-selection
+					background-image: linear-gradient(to bottom, lighten($red_color,5) 0%, darken($red_color,5) 100%)
+					background-color: $red_color
+				& .slider-track
+					background-image: linear-gradient(to bottom, #E5E5E5 0%, #E9E9E9 100%)
+				& .tooltip-inner
+					background-color: #e61f12
+				& .tooltip-arrow
+					border-bottom-color: #e61f12
+@media only screen and (max-width: 992px)
+	.select-color
+		width: 70%
+		margin: 0 auto
+	.slider-block
+		text-align: center
+
+section.product
+	h2
+		font-weight: bold
+		margin-bottom: 0
+	& .product-item
+		& .product-image
+			border: 1px solid #CCC
+			margin-bottom: 5px
+			& img
+				width: 100%
+		& .product-thumb
+			& .col-xs-4
+				cursor: pointer
+				padding: 0px
+				width: 32.4444%
+				& img
+					width: 100%
+					border: 1px solid #CCC
+			& .col-xs-4:nth-child(2)
+				margin: 0 5px
+			& .selected
+				border: 4px solid lighten($red_color, 10)
+	& .product-detail
+		& .product-block
+			& .product-review
+				& .fa-star
+					color: gray
+				& .selected
+					color: $red_color
+				& p
+					font-style: italic
+					font-size: 12px
+			& .product-price
+				margin-top: 10px
+				font-family: 'Nunito', sans-serif
+				background-color: #FFF
+				text-align: center
+				font-size: 72px
+				border: 1px solid  #D7D7D7
+				line-height: 76px
+				padding-top: 5px
+				position: relative
+				&:before
+					content: "174.00"
+					font-size: 24px
+					text-decoration: line-through
+					font-family: Helvetica, sans-serif
+					background-color: $red_color
+					position: absolute
+					line-height: 24px
+					color: #FFF
+					font-weight: 300
+					padding: 2px 20px
+					right: 0
+					top: -32px
+			& .product-pig
+				text-align: center
+		& .product-description
+			text-align: right
+			color: #777
+			border-top: 1px solid #777
+			& p
+				margin-top: 5px
+				line-height: 1em
+				font-size: 13px
+		& .product-car
+			& .free-shipping
+				text-align: right
+				font-weight: bold
+				margin: 10px auto
+			& .shipping-form
+				& .btn
+					margin-top: 15px
+				& .btn-danger
+					background-color: $red_color
+					&:hover
+						background-color: darken($red_color, 10)
+		& .product-share
+			text-align: right
+			& p
+				margin: 10px 0 0
+			& .social-icon
+				& li
+					width: 28px
+					height: 28px
+					// border: 1px solid
+					background-image: url("../img/social.png")
+					&.fb
+						background-position: 0px 0px
+					&.twitter
+						background-position: -36px 0px
+					&.vimeo
+						background-position: 28px 0px
+					&.rss
+						background-position: 0px 28px
+					&.google
+						background-position: -36px 28px
+					&.pinterest
+						background-position: 28px 28px
+					& a
+						display: block
+						width: 100%
+						height: 100%
+					&:hover
+						opacity: 0.6
+section.info
+	& .nav
+		margin-top: 40px
+	& .nav-pills 
+		& li
+			background-color: #FFF
+			& a
+				border-radius: 0px
+				font-family: 'Oswald', sans-serif
+				color: #333
+			&.active
+				& a
+					background-color: $red_color
+					color: #FFF
+	& .tab-content
+		& .tab-pane
+			background-color: #FFF
+			padding: 15px
+			border: 1px solid #DDD
+footer
+	background-color: $red_color
+	padding: 30px 0 20px
+	margin-top: 45px
+	& .footer-nav
+		& ul
+
+			& li
+				& a
+					color: #FFF
+			& li+li
+				&:before
+					content: "|"
+					padding-right: 10px
+					color: #FFF
+	& .footer-social
+		& ul
+			margin: 0
+			padding: 0
+			& li
+				width: 30px
+				height: 30px
+				background-image: url("../img/footericon.png")
+				&.pinterest
+					background-position: 0 0
+				&.twitter
+					background-position: -39px 0
+				&.facebook
+					background-position: 30px 0
+				& a
+					width: 100%
+					height: 100%
+					display: block
+@media only screen and (max-width: 992px)
+	footer
+		& .footer-logo
+			img
+				margin: 0 auto
+		& .footer-nav, & .footer-social
+			display: none
